@@ -3,15 +3,11 @@ def max_value(numbers):
         in the list.
     """
 
-    max_testing = numbers[0]
-
-    for n in range(numbers):
-        if numbers[n] > max_testing:
-            max_testing = numbers[n]
-
-    return max_testing
-
-    
+    highest = float('-inf')
+    for i in range(len(numbers)):
+        if numbers[i] > highest:
+            highest = numbers[i]
+    return highest
 
 
 if __name__ == "__main__":
